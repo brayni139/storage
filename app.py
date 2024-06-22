@@ -8,7 +8,7 @@ app = Flask(__name__)
 api = Api(app)
 
 # Инициализация Firebase Admin SDK
-cred = credentials.Certificate('serviceAccountKey.json')
+cred = credentials.Certificate('reygame-af213-firebase-adminsdk-5dlkj-a2d1fe06e4.json')
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://reygame-af213-default-rtdb.europe-west1.firebasedatabase.app'  # Замените на URL вашей базы данных Firebase
 })
